@@ -1,25 +1,244 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SNMainViewController" customModule="Signals" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YnZ-RS-WfS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PgZ-A7-eoT">
+                                    <size key="itemSize" width="375" height="667"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="jI5-t2-He6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06e-VD-6wE">
+                                <rect key="frame" x="0.0" y="607" width="375" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="wod-h0-mw9"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="J9J-82-3k1" kind="embed" id="sMA-wX-leY"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="06e-VD-6wE" firstAttribute="top" secondItem="YnZ-RS-WfS" secondAttribute="bottom" constant="-60" id="Fc1-9G-hAR"/>
+                            <constraint firstItem="YnZ-RS-WfS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kih-Lg-JXz"/>
+                            <constraint firstItem="YnZ-RS-WfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PLJ-0W-uTH"/>
+                            <constraint firstItem="06e-VD-6wE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QLx-jZ-pC1"/>
+                            <constraint firstAttribute="trailing" secondItem="06e-VD-6wE" secondAttribute="trailing" id="il0-Vd-qkv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YnZ-RS-WfS" secondAttribute="bottom" id="mjd-4d-mzo"/>
+                            <constraint firstAttribute="trailing" secondItem="YnZ-RS-WfS" secondAttribute="trailing" id="rW8-Wa-oAl"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="YnZ-RS-WfS" id="tRK-GN-qCS"/>
+                        <outlet property="statusViewTopConstraint" destination="Fc1-9G-hAR" id="Sfu-QZ-jo1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="635" y="597"/>
+        </scene>
+        <!--Status View Controller-->
+        <scene sceneID="081-1h-3OH">
+            <objects>
+                <viewController id="J9J-82-3k1" customClass="SNStatusViewController" customModule="Signals" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FvI-3q-cC1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Npx-3l-xuI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UUY-eO-0IL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skyline" translatesAutoresizingMaskIntoConstraints="NO" id="QAI-dY-c6q">
+                                <rect key="frame" x="0.0" y="-56" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="JUH-aY-cDi"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6n-Z7-GGS" userLabel="CurrentStatusView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-bZ-qgj">
+                                        <rect key="frame" x="317" y="5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Cew-bF-OIE"/>
+                                            <constraint firstAttribute="width" constant="50" id="rIn-rO-K3s"/>
+                                        </constraints>
+                                        <state key="normal" image="Add">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createButtonTapped:" destination="J9J-82-3k1" eventType="touchUpInside" id="9WR-8e-mEb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4z-9F-BdX" customClass="SNStatusButton" customModule="Signals" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="12" width="165" height="36"/>
+                                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="18"/>
+                                        <state key="normal" title="On the prowl.">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.90588235289999997" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                                <color key="value" red="0.97254901959999995" green="0.90588235289999997" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="currentStatusButtonTapped:" destination="J9J-82-3k1" eventType="touchUpInside" id="pCj-cp-I6j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fbQ-bZ-qgj" secondAttribute="trailing" constant="8" id="BJv-mk-q4p"/>
+                                    <constraint firstItem="z4z-9F-BdX" firstAttribute="leading" secondItem="Q6n-Z7-GGS" secondAttribute="leading" constant="20" id="BpW-Sb-27Z"/>
+                                    <constraint firstAttribute="centerY" secondItem="z4z-9F-BdX" secondAttribute="centerY" id="FdP-UJ-kgb"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ltl-NU-4bz"/>
+                                    <constraint firstAttribute="centerY" secondItem="fbQ-bZ-qgj" secondAttribute="centerY" id="PaA-hM-WlW"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t25-76-HK3" userLabel="SelectStatusView">
+                                <rect key="frame" x="58" y="22" width="258" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9g-0I-oAv">
+                                        <rect key="frame" x="72" y="0.0" width="113" height="18"/>
+                                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="14"/>
+                                        <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu1-vG-T9T" customClass="SNStatusButton" customModule="Signals" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="22" width="218" height="36"/>
+                                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="18"/>
+                                        <state key="normal" title="In the thick of it!">
+                                            <color key="titleColor" red="0.92549019610000005" green="0.3803921569" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                                <color key="value" red="0.92549019610000005" green="0.3803921569" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="emptyDot" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonATapped:" destination="J9J-82-3k1" eventType="touchUpInside" id="SmW-rK-79Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brP-Cr-FiO" customClass="SNStatusButton" customModule="Signals" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="66" width="165" height="36"/>
+                                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="18"/>
+                                        <state key="normal" title="On the prowl.">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.90588235289999997" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                                <color key="value" red="0.97254901959999995" green="0.90588235289999997" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="emptyDot" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonBTapped:" destination="J9J-82-3k1" eventType="touchUpInside" id="j8D-X1-oni"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XT-e8-9h6" customClass="SNStatusButton" customModule="Signals" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="110" width="151" height="36"/>
+                                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="18"/>
+                                        <state key="normal" title="Go off grid.">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="emptyDot" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonCTapped:" destination="J9J-82-3k1" eventType="touchUpInside" id="zm9-CB-RGm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="M9g-0I-oAv" secondAttribute="centerX" id="5B3-6Y-htE"/>
+                                    <constraint firstAttribute="height" constant="140" id="5yh-gV-pKc"/>
+                                    <constraint firstItem="brP-Cr-FiO" firstAttribute="top" secondItem="nu1-vG-T9T" secondAttribute="bottom" constant="8" id="LJj-wN-13v"/>
+                                    <constraint firstItem="nu1-vG-T9T" firstAttribute="top" secondItem="M9g-0I-oAv" secondAttribute="bottom" constant="4" id="LXg-5c-8Og"/>
+                                    <constraint firstItem="5XT-e8-9h6" firstAttribute="leading" secondItem="t25-76-HK3" secondAttribute="leading" constant="20" id="Lny-DE-ddl"/>
+                                    <constraint firstItem="brP-Cr-FiO" firstAttribute="leading" secondItem="t25-76-HK3" secondAttribute="leading" constant="20" id="Okw-rT-MEv"/>
+                                    <constraint firstAttribute="width" constant="258" id="d0I-Ar-Wav"/>
+                                    <constraint firstItem="M9g-0I-oAv" firstAttribute="top" secondItem="t25-76-HK3" secondAttribute="top" id="f3I-Uw-E30"/>
+                                    <constraint firstItem="nu1-vG-T9T" firstAttribute="leading" secondItem="t25-76-HK3" secondAttribute="leading" constant="20" id="tFT-sP-eGK"/>
+                                    <constraint firstItem="5XT-e8-9h6" firstAttribute="top" secondItem="brP-Cr-FiO" secondAttribute="bottom" constant="8" id="tIa-38-Hiy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QAI-dY-c6q" firstAttribute="leading" secondItem="UUY-eO-0IL" secondAttribute="leading" id="0S1-Si-ZgL"/>
+                            <constraint firstAttribute="trailing" secondItem="QAI-dY-c6q" secondAttribute="trailing" id="3qN-qk-pu9"/>
+                            <constraint firstAttribute="centerX" secondItem="t25-76-HK3" secondAttribute="centerX" id="QcI-5e-3j9"/>
+                            <constraint firstItem="Q6n-Z7-GGS" firstAttribute="top" secondItem="UUY-eO-0IL" secondAttribute="top" id="aiL-NI-t5x"/>
+                            <constraint firstItem="Q6n-Z7-GGS" firstAttribute="leading" secondItem="UUY-eO-0IL" secondAttribute="leading" id="fEW-7C-QlP"/>
+                            <constraint firstItem="t25-76-HK3" firstAttribute="top" secondItem="FvI-3q-cC1" secondAttribute="top" constant="22" id="fYn-wP-PX0"/>
+                            <constraint firstItem="QAI-dY-c6q" firstAttribute="bottom" secondItem="FvI-3q-cC1" secondAttribute="top" id="q7g-mi-sYf"/>
+                            <constraint firstAttribute="trailing" secondItem="Q6n-Z7-GGS" secondAttribute="trailing" id="qXb-FS-jcW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentStatusButton" destination="z4z-9F-BdX" id="XiI-RD-2Ez"/>
+                        <outlet property="currentStatusView" destination="Q6n-Z7-GGS" id="yqJ-Zb-SrH"/>
+                        <outlet property="selectStatusView" destination="t25-76-HK3" id="mAa-nX-f8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cij-2T-Nwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122.5" y="596.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Add" width="18" height="18"/>
+        <image name="Skyline" width="414" height="56"/>
+    </resources>
 </document>

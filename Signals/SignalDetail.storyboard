@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Signal Detail View Controller-->
+        <scene sceneID="IwU-GF-KVJ">
+            <objects>
+                <viewController storyboardIdentifier="SNSignalDetailViewController" id="Ufy-7d-5SY" customClass="SNSignalDetailViewController" customModule="Signals" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FWH-nl-jF1"/>
+                        <viewControllerLayoutGuide type="bottom" id="R1k-Za-hxO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jap-cT-qEb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kou-TB-Ddv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-hs-6hf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9F-NQ-XNd" userLabel="LocationViewController">
+                                                <rect key="frame" x="0.0" y="109" width="375" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="n2z-4J-xvQ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="HPm-0E-p4j" kind="embed" id="cyW-nf-DvP"/>
+                                                </connections>
+                                            </containerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtq-q6-y15">
+                                                <rect key="frame" x="169" y="75" width="38" height="22"/>
+                                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                                <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.41960784309999999" green="0.090196078430000007" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="gtq-q6-y15" secondAttribute="centerX" id="3EA-ly-l4j"/>
+                                            <constraint firstAttribute="height" constant="667" id="Enf-ZE-Tdd"/>
+                                            <constraint firstItem="gtq-q6-y15" firstAttribute="top" secondItem="7cH-hs-6hf" secondAttribute="top" constant="75" id="HWK-Mq-DPP"/>
+                                            <constraint firstItem="E9F-NQ-XNd" firstAttribute="top" secondItem="gtq-q6-y15" secondAttribute="bottom" constant="12" id="PDt-4y-i69"/>
+                                            <constraint firstItem="E9F-NQ-XNd" firstAttribute="leading" secondItem="7cH-hs-6hf" secondAttribute="leading" id="bSs-PT-fdJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="E9F-NQ-XNd" secondAttribute="trailing" id="iSB-7E-hi2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.41960784309999999" green="0.090196078430000007" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7cH-hs-6hf" firstAttribute="leading" secondItem="kou-TB-Ddv" secondAttribute="leading" id="2bm-zi-gqd"/>
+                                    <constraint firstAttribute="bottom" secondItem="7cH-hs-6hf" secondAttribute="bottom" id="RKE-CG-e19"/>
+                                    <constraint firstAttribute="trailing" secondItem="7cH-hs-6hf" secondAttribute="trailing" id="TI3-Lx-3b8"/>
+                                    <constraint firstItem="7cH-hs-6hf" firstAttribute="top" secondItem="kou-TB-Ddv" secondAttribute="top" id="wW2-IB-GEz"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VX-EO-4zB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="gle-vq-MN0"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.41960784309999999" green="0.090196078430000007" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="VaE-T9-lsR">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="YnK-tA-9QK">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ovo-uF-8uR">
+                                                <rect key="frame" x="16" y="27" width="68" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="WhiteBack">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButtonTapped:" destination="Ufy-7d-5SY" eventType="touchUpInside" id="jY0-mx-s6g"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                        <view key="titleView" contentMode="scaleToFill" id="4Ge-Dy-5PB">
+                                            <rect key="frame" x="113" y="18" width="150" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark's Signal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsH-y1-WUs">
+                                                    <rect key="frame" x="8" y="13" width="135" height="22"/>
+                                                    <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                                    <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.41960784309999999" green="0.090196078430000007" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="ZsH-y1-WUs" secondAttribute="centerX" id="89q-eq-ryA"/>
+                                                <constraint firstAttribute="centerY" secondItem="ZsH-y1-WUs" secondAttribute="centerY" id="hm7-fx-Brr"/>
+                                            </constraints>
+                                        </view>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41960784309999999" green="0.090196078430000007" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R1k-Za-hxO" firstAttribute="top" secondItem="kou-TB-Ddv" secondAttribute="bottom" id="2cs-QH-VHz"/>
+                            <constraint firstAttribute="width" secondItem="7cH-hs-6hf" secondAttribute="width" id="Hv1-79-FlB"/>
+                            <constraint firstAttribute="trailing" secondItem="7VX-EO-4zB" secondAttribute="trailing" id="LWf-k7-SVo"/>
+                            <constraint firstItem="7VX-EO-4zB" firstAttribute="leading" secondItem="Jap-cT-qEb" secondAttribute="leading" id="LsT-aU-0aK"/>
+                            <constraint firstItem="kou-TB-Ddv" firstAttribute="top" secondItem="Jap-cT-qEb" secondAttribute="top" id="RHK-9C-oBt"/>
+                            <constraint firstItem="kou-TB-Ddv" firstAttribute="leading" secondItem="Jap-cT-qEb" secondAttribute="leading" id="VWu-fw-QMV"/>
+                            <constraint firstItem="7VX-EO-4zB" firstAttribute="top" secondItem="Jap-cT-qEb" secondAttribute="top" id="WfW-T5-E6o"/>
+                            <constraint firstAttribute="trailing" secondItem="kou-TB-Ddv" secondAttribute="trailing" id="d4Z-AQ-fmT"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="7VX-EO-4zB" id="R13-bR-fgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqT-Bq-kQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="380"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="0gk-vm-eKh">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="HPm-0E-p4j" customClass="SNLocationViewController" customModule="Signals" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TSu-UH-nQx"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Ps-TG-cZ4"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="irr-Hk-iKr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1IW-6h-O2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.5" y="270"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WhiteBack" width="13" height="20"/>
+    </resources>
+</document>

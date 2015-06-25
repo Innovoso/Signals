@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Joined Signals View Controller-->
+        <scene sceneID="Nu4-kY-APG">
+            <objects>
+                <viewController storyboardIdentifier="SNJoinedSignalsViewController" id="7TR-wq-Oh7" customClass="SNJoinedSignalsViewController" customModule="Signals" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PW0-FM-nnw"/>
+                        <viewControllerLayoutGuide type="bottom" id="njZ-dE-5i8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q1E-cL-hhM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j6Y-pP-TVl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="64" maxX="0.0" maxY="100"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="QPC-wa-hfn">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6P-gG-O3s">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Z4w-YX-4gz"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="eif-M2-oua">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Cwu-fG-B1a">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BDh-hm-o96">
+                                                <rect key="frame" x="16" y="27" width="13" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="GreenBack">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </barButtonItem>
+                                        <view key="titleView" contentMode="scaleToFill" id="Yna-vX-WKO">
+                                            <rect key="frame" x="113" y="18" width="150" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Joined Signals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBq-b6-Esc">
+                                                    <rect key="frame" x="4" y="13" width="143" height="22"/>
+                                                    <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="19"/>
+                                                    <color key="textColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="gBq-b6-Esc" secondAttribute="centerX" id="2qC-38-XTd"/>
+                                                <constraint firstAttribute="centerY" secondItem="gBq-b6-Esc" secondAttribute="centerY" id="HHs-7m-Xoc"/>
+                                            </constraints>
+                                        </view>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j6Y-pP-TVl" secondAttribute="trailing" id="25O-bP-0LB"/>
+                            <constraint firstAttribute="trailing" secondItem="u6P-gG-O3s" secondAttribute="trailing" id="JlW-aV-lZU"/>
+                            <constraint firstItem="u6P-gG-O3s" firstAttribute="leading" secondItem="Q1E-cL-hhM" secondAttribute="leading" id="hZt-zY-DMm"/>
+                            <constraint firstItem="u6P-gG-O3s" firstAttribute="top" secondItem="Q1E-cL-hhM" secondAttribute="top" id="jAK-80-N00"/>
+                            <constraint firstItem="j6Y-pP-TVl" firstAttribute="top" secondItem="Q1E-cL-hhM" secondAttribute="top" id="vvc-TX-hK3"/>
+                            <constraint firstItem="njZ-dE-5i8" firstAttribute="top" secondItem="j6Y-pP-TVl" secondAttribute="bottom" id="vyP-Ox-7pv"/>
+                            <constraint firstItem="j6Y-pP-TVl" firstAttribute="leading" secondItem="Q1E-cL-hhM" secondAttribute="leading" id="x5e-wD-JaY"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="j6Y-pP-TVl" id="ubP-uw-4Ek"/>
+                        <outlet property="navigationBar" destination="u6P-gG-O3s" id="br2-tn-r8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIs-Gv-6y7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="491"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GreenBack" width="13" height="20"/>
+    </resources>
+</document>

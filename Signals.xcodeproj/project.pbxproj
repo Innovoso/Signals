@@ -7,12 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A825F411B3BD2F000E0760E /* SNSignalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F401B3BD2F000E0760E /* SNSignalCell.swift */; };
+		3A825F431B3BD44800E0760E /* SNSignalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F421B3BD44800E0760E /* SNSignalImageView.swift */; };
+		3A825F461B3BE43C00E0760E /* SNExpandedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F451B3BE43C00E0760E /* SNExpandedButton.swift */; };
+		3A825F481B3BE46200E0760E /* SNSquareBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F471B3BE46200E0760E /* SNSquareBadgeButton.swift */; };
+		3A825F4B1B3BE61A00E0760E /* SNJoinedSignalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A825F4A1B3BE61A00E0760E /* SNJoinedSignalCell.xib */; };
+		3A825F4D1B3BE63E00E0760E /* SNJoinedSignalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F4C1B3BE63E00E0760E /* SNJoinedSignalCell.swift */; };
+		3A825F501B3BED7600E0760E /* SNSidekickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A825F4F1B3BED7600E0760E /* SNSidekickCell.xib */; };
+		3A825F521B3BED8A00E0760E /* SNSidekickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F511B3BED8A00E0760E /* SNSidekickCell.swift */; };
 		3AAA093D1B39263D009DFA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA093C1B39263D009DFA26 /* AppDelegate.swift */; };
-		3AAA093F1B39263D009DFA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA093E1B39263D009DFA26 /* ViewController.swift */; };
+		3AAA093F1B39263D009DFA26 /* SNMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA093E1B39263D009DFA26 /* SNMainViewController.swift */; };
 		3AAA09421B39263D009DFA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAA09401B39263D009DFA26 /* Main.storyboard */; };
 		3AAA09441B39263D009DFA26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AAA09431B39263D009DFA26 /* Images.xcassets */; };
 		3AAA09471B39263D009DFA26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AAA09451B39263D009DFA26 /* LaunchScreen.xib */; };
 		3AAA09531B39263D009DFA26 /* SignalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA09521B39263D009DFA26 /* SignalsTests.swift */; };
+		3AE94C7C1B3AABE2009658C5 /* SNStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C7B1B3AABE2009658C5 /* SNStatusViewController.swift */; };
+		3AE94C811B3AB612009658C5 /* Signals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94C801B3AB612009658C5 /* Signals.storyboard */; };
+		3AE94C831B3AB637009658C5 /* JoinedSignals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94C821B3AB637009658C5 /* JoinedSignals.storyboard */; };
+		3AE94C851B3AB64D009658C5 /* Sidekicks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94C841B3AB64D009658C5 /* Sidekicks.storyboard */; };
+		3AE94C871B3AB676009658C5 /* SNSignalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C861B3AB676009658C5 /* SNSignalsViewController.swift */; };
+		3AE94C891B3AB685009658C5 /* SNJoinedSignalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C881B3AB685009658C5 /* SNJoinedSignalsViewController.swift */; };
+		3AE94C8B1B3AB697009658C5 /* SNSidekicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C8A1B3AB697009658C5 /* SNSidekicksViewController.swift */; };
+		3AE94C8E1B3AB729009658C5 /* SNSignalsViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C8D1B3AB729009658C5 /* SNSignalsViewControllerCell.swift */; };
+		3AE94C901B3AB735009658C5 /* SNJoinedSignalsViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C8F1B3AB735009658C5 /* SNJoinedSignalsViewControllerCell.swift */; };
+		3AE94C921B3AB742009658C5 /* SNSidekicksViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C911B3AB742009658C5 /* SNSidekicksViewControllerCell.swift */; };
+		3AE94C981B3AB991009658C5 /* SNViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C971B3AB991009658C5 /* SNViewControllerCell.swift */; };
+		3AE94C9A1B3AC053009658C5 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C991B3AC053009658C5 /* UIViewController+Extensions.swift */; };
+		3AE94C9D1B3AC135009658C5 /* SNNoHairlineNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94C9C1B3AC135009658C5 /* SNNoHairlineNavigationBarViewController.swift */; };
+		3AE94C9F1B3AC21F009658C5 /* Comic Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94C9E1B3AC20B009658C5 /* Comic Book.otf */; };
+		3AE94CA21B3AD0A0009658C5 /* SNStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94CA11B3AD0A0009658C5 /* SNStatusButton.swift */; };
+		3AE94CA41B3B15B0009658C5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94CA31B3B15B0009658C5 /* UIView+Extensions.swift */; };
+		3AE94CA81B3B3C1A009658C5 /* SNStarBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94CA71B3B3C1A009658C5 /* SNStarBackgroundView.xib */; };
+		3AE94CAA1B3B3C2C009658C5 /* SNStarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94CA91B3B3C2C009658C5 /* SNStarBackgroundView.swift */; };
+		3AE94CAD1B3B43D6009658C5 /* CreateSignal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94CAC1B3B43D6009658C5 /* CreateSignal.storyboard */; };
+		3AE94CAF1B3B43E7009658C5 /* SNCreateSignalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94CAE1B3B43E7009658C5 /* SNCreateSignalViewController.swift */; };
+		3AE94CB21B3B4752009658C5 /* SignalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94CB11B3B4752009658C5 /* SignalDetail.storyboard */; };
+		3AE94CB41B3B4764009658C5 /* SNSignalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94CB31B3B4764009658C5 /* SNSignalDetailViewController.swift */; };
+		3AE94CB61B3B49CB009658C5 /* SNLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE94CB51B3B49CB009658C5 /* SNLocationViewController.swift */; };
+		3AE94CB81B3BD24B009658C5 /* SNSignalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE94CB71B3BD24B009658C5 /* SNSignalCell.xib */; };
+		DF7E6837F274861A4C39EEC8 /* Pods_Signals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB09A415C4D5C03A87436BEF /* Pods_Signals.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +59,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		316AB3BE4106CD8CAB0A8F77 /* Pods-Signals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signals.release.xcconfig"; path = "Pods/Target Support Files/Pods-Signals/Pods-Signals.release.xcconfig"; sourceTree = "<group>"; };
+		3A825F401B3BD2F000E0760E /* SNSignalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSignalCell.swift; sourceTree = "<group>"; };
+		3A825F421B3BD44800E0760E /* SNSignalImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSignalImageView.swift; sourceTree = "<group>"; };
+		3A825F451B3BE43C00E0760E /* SNExpandedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNExpandedButton.swift; sourceTree = "<group>"; };
+		3A825F471B3BE46200E0760E /* SNSquareBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSquareBadgeButton.swift; sourceTree = "<group>"; };
+		3A825F4A1B3BE61A00E0760E /* SNJoinedSignalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNJoinedSignalCell.xib; sourceTree = "<group>"; };
+		3A825F4C1B3BE63E00E0760E /* SNJoinedSignalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNJoinedSignalCell.swift; sourceTree = "<group>"; };
+		3A825F4F1B3BED7600E0760E /* SNSidekickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNSidekickCell.xib; sourceTree = "<group>"; };
+		3A825F511B3BED8A00E0760E /* SNSidekickCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSidekickCell.swift; sourceTree = "<group>"; };
 		3AAA09371B39263D009DFA26 /* Signals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAA093B1B39263D009DFA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AAA093C1B39263D009DFA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3AAA093E1B39263D009DFA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AAA093E1B39263D009DFA26 /* SNMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMainViewController.swift; sourceTree = "<group>"; };
 		3AAA09411B39263D009DFA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AAA09431B39263D009DFA26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3AAA09461B39263D009DFA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3AAA094C1B39263D009DFA26 /* SignalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAA09511B39263D009DFA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AAA09521B39263D009DFA26 /* SignalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalsTests.swift; sourceTree = "<group>"; };
+		3AE94C7B1B3AABE2009658C5 /* SNStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNStatusViewController.swift; sourceTree = "<group>"; };
+		3AE94C801B3AB612009658C5 /* Signals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signals.storyboard; sourceTree = "<group>"; };
+		3AE94C821B3AB637009658C5 /* JoinedSignals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JoinedSignals.storyboard; sourceTree = "<group>"; };
+		3AE94C841B3AB64D009658C5 /* Sidekicks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sidekicks.storyboard; sourceTree = "<group>"; };
+		3AE94C861B3AB676009658C5 /* SNSignalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSignalsViewController.swift; sourceTree = "<group>"; };
+		3AE94C881B3AB685009658C5 /* SNJoinedSignalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNJoinedSignalsViewController.swift; sourceTree = "<group>"; };
+		3AE94C8A1B3AB697009658C5 /* SNSidekicksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSidekicksViewController.swift; sourceTree = "<group>"; };
+		3AE94C8D1B3AB729009658C5 /* SNSignalsViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSignalsViewControllerCell.swift; sourceTree = "<group>"; };
+		3AE94C8F1B3AB735009658C5 /* SNJoinedSignalsViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNJoinedSignalsViewControllerCell.swift; sourceTree = "<group>"; };
+		3AE94C911B3AB742009658C5 /* SNSidekicksViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSidekicksViewControllerCell.swift; sourceTree = "<group>"; };
+		3AE94C971B3AB991009658C5 /* SNViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNViewControllerCell.swift; sourceTree = "<group>"; };
+		3AE94C991B3AC053009658C5 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		3AE94C9C1B3AC135009658C5 /* SNNoHairlineNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNNoHairlineNavigationBarViewController.swift; sourceTree = "<group>"; };
+		3AE94C9E1B3AC20B009658C5 /* Comic Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book.otf"; sourceTree = "<group>"; };
+		3AE94CA11B3AD0A0009658C5 /* SNStatusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNStatusButton.swift; sourceTree = "<group>"; };
+		3AE94CA31B3B15B0009658C5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		3AE94CA71B3B3C1A009658C5 /* SNStarBackgroundView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNStarBackgroundView.xib; sourceTree = "<group>"; };
+		3AE94CA91B3B3C2C009658C5 /* SNStarBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNStarBackgroundView.swift; sourceTree = "<group>"; };
+		3AE94CAC1B3B43D6009658C5 /* CreateSignal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateSignal.storyboard; sourceTree = "<group>"; };
+		3AE94CAE1B3B43E7009658C5 /* SNCreateSignalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNCreateSignalViewController.swift; sourceTree = "<group>"; };
+		3AE94CB11B3B4752009658C5 /* SignalDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignalDetail.storyboard; sourceTree = "<group>"; };
+		3AE94CB31B3B4764009658C5 /* SNSignalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSignalDetailViewController.swift; sourceTree = "<group>"; };
+		3AE94CB51B3B49CB009658C5 /* SNLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNLocationViewController.swift; sourceTree = "<group>"; };
+		3AE94CB71B3BD24B009658C5 /* SNSignalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNSignalCell.xib; sourceTree = "<group>"; };
+		7F701A3C02C1DE9E4011ECB9 /* Pods-Signals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Signals/Pods-Signals.debug.xcconfig"; sourceTree = "<group>"; };
+		BB09A415C4D5C03A87436BEF /* Pods_Signals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Signals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF7E6837F274861A4C39EEC8 /* Pods_Signals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +125,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A825F3F1B3BD2D900E0760E /* SNSignalCell */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94CB71B3BD24B009658C5 /* SNSignalCell.xib */,
+				3A825F401B3BD2F000E0760E /* SNSignalCell.swift */,
+				3A825F421B3BD44800E0760E /* SNSignalImageView.swift */,
+			);
+			name = SNSignalCell;
+			sourceTree = "<group>";
+		};
+		3A825F441B3BE42A00E0760E /* SNBadgeButton */ = {
+			isa = PBXGroup;
+			children = (
+				3A825F451B3BE43C00E0760E /* SNExpandedButton.swift */,
+				3A825F471B3BE46200E0760E /* SNSquareBadgeButton.swift */,
+			);
+			name = SNBadgeButton;
+			sourceTree = "<group>";
+		};
+		3A825F491B3BE60500E0760E /* SNJoinedSignalCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A825F4A1B3BE61A00E0760E /* SNJoinedSignalCell.xib */,
+				3A825F4C1B3BE63E00E0760E /* SNJoinedSignalCell.swift */,
+			);
+			name = SNJoinedSignalCell;
+			sourceTree = "<group>";
+		};
+		3A825F4E1B3BED6500E0760E /* SNSidekickCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A825F4F1B3BED7600E0760E /* SNSidekickCell.xib */,
+				3A825F511B3BED8A00E0760E /* SNSidekickCell.swift */,
+			);
+			name = SNSidekickCell;
+			sourceTree = "<group>";
+		};
 		3AAA092E1B39263D009DFA26 = {
 			isa = PBXGroup;
 			children = (
 				3AAA09391B39263D009DFA26 /* Signals */,
 				3AAA094F1B39263D009DFA26 /* SignalsTests */,
 				3AAA09381B39263D009DFA26 /* Products */,
+				3C4405FB55A0D2C1DC22F51B /* Pods */,
+				EF075A18B26EAA74188CA8EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +185,12 @@
 		3AAA09391B39263D009DFA26 /* Signals */ = {
 			isa = PBXGroup;
 			children = (
+				3AAA09611B392969009DFA26 /* Common */,
+				3AAA09601B39295A009DFA26 /* Managers */,
+				3AAA095E1B3928DB009DFA26 /* Models */,
+				3AAA095D1B3928D6009DFA26 /* Extensions */,
+				3AAA095C1B3928C6009DFA26 /* ViewControllers */,
 				3AAA093C1B39263D009DFA26 /* AppDelegate.swift */,
-				3AAA093E1B39263D009DFA26 /* ViewController.swift */,
-				3AAA09401B39263D009DFA26 /* Main.storyboard */,
 				3AAA09431B39263D009DFA26 /* Images.xcassets */,
 				3AAA09451B39263D009DFA26 /* LaunchScreen.xib */,
 				3AAA093A1B39263D009DFA26 /* Supporting Files */,
@@ -90,6 +201,7 @@
 		3AAA093A1B39263D009DFA26 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AAA095F1B3928F8009DFA26 /* Fonts */,
 				3AAA093B1B39263D009DFA26 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +224,190 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3AAA095C1B3928C6009DFA26 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C9B1B3AC0B7009658C5 /* Common */,
+				3AAA09401B39263D009DFA26 /* Main.storyboard */,
+				3AE94C791B3AA874009658C5 /* SNMainViewController */,
+				3AE94C7A1B3AABC2009658C5 /* SNStatusViewController */,
+				3AE94CA51B3B3BE3009658C5 /* TopLevelViewControllers */,
+				3AE94CAB1B3B43BC009658C5 /* SNCreateSignalViewController */,
+				3AE94CB01B3B4735009658C5 /* SNSignalDetailViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3AAA095D1B3928D6009DFA26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C991B3AC053009658C5 /* UIViewController+Extensions.swift */,
+				3AE94CA31B3B15B0009658C5 /* UIView+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		3AAA095E1B3928DB009DFA26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3AAA095F1B3928F8009DFA26 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C9E1B3AC20B009658C5 /* Comic Book.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		3AAA09601B39295A009DFA26 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		3AAA09611B392969009DFA26 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		3AE94C791B3AA874009658C5 /* SNMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AAA093E1B39263D009DFA26 /* SNMainViewController.swift */,
+				3AE94C8C1B3AB709009658C5 /* Views */,
+			);
+			name = SNMainViewController;
+			sourceTree = "<group>";
+		};
+		3AE94C7A1B3AABC2009658C5 /* SNStatusViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C7B1B3AABE2009658C5 /* SNStatusViewController.swift */,
+				3AE94CA01B3AD033009658C5 /* Views */,
+			);
+			name = SNStatusViewController;
+			sourceTree = "<group>";
+		};
+		3AE94C7D1B3AB5B5009658C5 /* SNSidekicksViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C841B3AB64D009658C5 /* Sidekicks.storyboard */,
+				3AE94C8A1B3AB697009658C5 /* SNSidekicksViewController.swift */,
+			);
+			name = SNSidekicksViewController;
+			sourceTree = "<group>";
+		};
+		3AE94C7E1B3AB5DD009658C5 /* SNSignalsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C801B3AB612009658C5 /* Signals.storyboard */,
+				3AE94C861B3AB676009658C5 /* SNSignalsViewController.swift */,
+			);
+			name = SNSignalsViewController;
+			sourceTree = "<group>";
+		};
+		3AE94C7F1B3AB5ED009658C5 /* SNJoinedSignalsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C821B3AB637009658C5 /* JoinedSignals.storyboard */,
+				3AE94C881B3AB685009658C5 /* SNJoinedSignalsViewController.swift */,
+			);
+			name = SNJoinedSignalsViewController;
+			sourceTree = "<group>";
+		};
+		3AE94C8C1B3AB709009658C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C971B3AB991009658C5 /* SNViewControllerCell.swift */,
+				3AE94C8D1B3AB729009658C5 /* SNSignalsViewControllerCell.swift */,
+				3AE94C8F1B3AB735009658C5 /* SNJoinedSignalsViewControllerCell.swift */,
+				3AE94C911B3AB742009658C5 /* SNSidekicksViewControllerCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3AE94C9B1B3AC0B7009658C5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94C9C1B3AC135009658C5 /* SNNoHairlineNavigationBarViewController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		3AE94CA01B3AD033009658C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94CA11B3AD0A0009658C5 /* SNStatusButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3AE94CA51B3B3BE3009658C5 /* TopLevelViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94CA61B3B3BFD009658C5 /* Common */,
+				3AE94C7E1B3AB5DD009658C5 /* SNSignalsViewController */,
+				3AE94C7F1B3AB5ED009658C5 /* SNJoinedSignalsViewController */,
+				3AE94C7D1B3AB5B5009658C5 /* SNSidekicksViewController */,
+			);
+			name = TopLevelViewControllers;
+			sourceTree = "<group>";
+		};
+		3AE94CA61B3B3BFD009658C5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3A825F4E1B3BED6500E0760E /* SNSidekickCell */,
+				3A825F3F1B3BD2D900E0760E /* SNSignalCell */,
+				3A825F491B3BE60500E0760E /* SNJoinedSignalCell */,
+				3A825F441B3BE42A00E0760E /* SNBadgeButton */,
+				3AE94CA91B3B3C2C009658C5 /* SNStarBackgroundView.swift */,
+				3AE94CA71B3B3C1A009658C5 /* SNStarBackgroundView.xib */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		3AE94CAB1B3B43BC009658C5 /* SNCreateSignalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94CAC1B3B43D6009658C5 /* CreateSignal.storyboard */,
+				3AE94CAE1B3B43E7009658C5 /* SNCreateSignalViewController.swift */,
+			);
+			name = SNCreateSignalViewController;
+			sourceTree = "<group>";
+		};
+		3AE94CB01B3B4735009658C5 /* SNSignalDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AE94CB11B3B4752009658C5 /* SignalDetail.storyboard */,
+				3AE94CB31B3B4764009658C5 /* SNSignalDetailViewController.swift */,
+				3AE94CB51B3B49CB009658C5 /* SNLocationViewController.swift */,
+			);
+			name = SNSignalDetailViewController;
+			sourceTree = "<group>";
+		};
+		3C4405FB55A0D2C1DC22F51B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F701A3C02C1DE9E4011ECB9 /* Pods-Signals.debug.xcconfig */,
+				316AB3BE4106CD8CAB0A8F77 /* Pods-Signals.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF075A18B26EAA74188CA8EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB09A415C4D5C03A87436BEF /* Pods_Signals.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +415,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AAA09561B39263D009DFA26 /* Build configuration list for PBXNativeTarget "Signals" */;
 			buildPhases = (
+				8F12C4BB07AA87E8EDB15CD5 /* Check Pods Manifest.lock */,
 				3AAA09331B39263D009DFA26 /* Sources */,
 				3AAA09341B39263D009DFA26 /* Frameworks */,
 				3AAA09351B39263D009DFA26 /* Resources */,
+				4ECC8B84FA33AFA29866FA42 /* Embed Pods Frameworks */,
+				4DBC73221D1697A456F22E75 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,9 +492,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE94C831B3AB637009658C5 /* JoinedSignals.storyboard in Resources */,
+				3AE94CB81B3BD24B009658C5 /* SNSignalCell.xib in Resources */,
 				3AAA09421B39263D009DFA26 /* Main.storyboard in Resources */,
+				3A825F4B1B3BE61A00E0760E /* SNJoinedSignalCell.xib in Resources */,
 				3AAA09471B39263D009DFA26 /* LaunchScreen.xib in Resources */,
+				3AE94C9F1B3AC21F009658C5 /* Comic Book.otf in Resources */,
+				3AE94C811B3AB612009658C5 /* Signals.storyboard in Resources */,
+				3A825F501B3BED7600E0760E /* SNSidekickCell.xib in Resources */,
+				3AE94CAD1B3B43D6009658C5 /* CreateSignal.storyboard in Resources */,
 				3AAA09441B39263D009DFA26 /* Images.xcassets in Resources */,
+				3AE94C851B3AB64D009658C5 /* Sidekicks.storyboard in Resources */,
+				3AE94CA81B3B3C1A009658C5 /* SNStarBackgroundView.xib in Resources */,
+				3AE94CB21B3B4752009658C5 /* SignalDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,13 +517,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DBC73221D1697A456F22E75 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Signals/Pods-Signals-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ECC8B84FA33AFA29866FA42 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Signals/Pods-Signals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F12C4BB07AA87E8EDB15CD5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AAA09331B39263D009DFA26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AAA093F1B39263D009DFA26 /* ViewController.swift in Sources */,
+				3AE94CA41B3B15B0009658C5 /* UIView+Extensions.swift in Sources */,
+				3AE94CAA1B3B3C2C009658C5 /* SNStarBackgroundView.swift in Sources */,
+				3A825F461B3BE43C00E0760E /* SNExpandedButton.swift in Sources */,
+				3AAA093F1B39263D009DFA26 /* SNMainViewController.swift in Sources */,
+				3AE94C8E1B3AB729009658C5 /* SNSignalsViewControllerCell.swift in Sources */,
+				3AE94C871B3AB676009658C5 /* SNSignalsViewController.swift in Sources */,
+				3AE94C7C1B3AABE2009658C5 /* SNStatusViewController.swift in Sources */,
+				3AE94C901B3AB735009658C5 /* SNJoinedSignalsViewControllerCell.swift in Sources */,
+				3A825F4D1B3BE63E00E0760E /* SNJoinedSignalCell.swift in Sources */,
+				3A825F431B3BD44800E0760E /* SNSignalImageView.swift in Sources */,
+				3AE94CB41B3B4764009658C5 /* SNSignalDetailViewController.swift in Sources */,
+				3AE94C981B3AB991009658C5 /* SNViewControllerCell.swift in Sources */,
+				3AE94C9A1B3AC053009658C5 /* UIViewController+Extensions.swift in Sources */,
+				3A825F411B3BD2F000E0760E /* SNSignalCell.swift in Sources */,
+				3AE94CA21B3AD0A0009658C5 /* SNStatusButton.swift in Sources */,
+				3AE94C921B3AB742009658C5 /* SNSidekicksViewControllerCell.swift in Sources */,
+				3AE94CAF1B3B43E7009658C5 /* SNCreateSignalViewController.swift in Sources */,
 				3AAA093D1B39263D009DFA26 /* AppDelegate.swift in Sources */,
+				3AE94CB61B3B49CB009658C5 /* SNLocationViewController.swift in Sources */,
+				3AE94C8B1B3AB697009658C5 /* SNSidekicksViewController.swift in Sources */,
+				3A825F481B3BE46200E0760E /* SNSquareBadgeButton.swift in Sources */,
+				3AE94C9D1B3AC135009658C5 /* SNNoHairlineNavigationBarViewController.swift in Sources */,
+				3AE94C891B3AB685009658C5 /* SNJoinedSignalsViewController.swift in Sources */,
+				3A825F521B3BED8A00E0760E /* SNSidekickCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +720,7 @@
 		};
 		3AAA09571B39263D009DFA26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F701A3C02C1DE9E4011ECB9 /* Pods-Signals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -352,6 +732,7 @@
 		};
 		3AAA09581B39263D009DFA26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316AB3BE4106CD8CAB0A8F77 /* Pods-Signals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -414,6 +795,7 @@
 				3AAA09581B39263D009DFA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AAA09591B39263D009DFA26 /* Build configuration list for PBXNativeTarget "SignalsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +804,7 @@
 				3AAA095B1B39263D009DFA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

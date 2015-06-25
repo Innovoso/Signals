@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SNSignalCell" id="TX5-Tu-TXw" customClass="SNSignalCell" customModule="Signals" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="szw-k0-QVd" customClass="SNSignalImageView" customModule="Signals" customModuleProvider="target">
+                        <rect key="frame" x="147" y="0.0" width="80" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="RXY-Oh-tRR"/>
+                            <constraint firstAttribute="height" constant="80" id="gHW-In-PBW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqV-OH-Fnx">
+                        <rect key="frame" x="239" y="8" width="124" height="20"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:30pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBm-SD-pUP">
+                        <rect key="frame" x="239" y="28" width="124" height="20"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open spots:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FID-8I-lJ6">
+                        <rect key="frame" x="239" y="51" width="65" height="13"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="10"/>
+                        <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edj-we-JMf">
+                        <rect key="frame" x="312" y="48" width="11" height="20"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Edj-we-JMf" firstAttribute="leading" secondItem="FID-8I-lJ6" secondAttribute="trailing" constant="8" id="1Ci-Ii-YjZ"/>
+                <constraint firstItem="FID-8I-lJ6" firstAttribute="leading" secondItem="szw-k0-QVd" secondAttribute="trailing" constant="12" id="5yr-ii-dXm"/>
+                <constraint firstItem="dqV-OH-Fnx" firstAttribute="top" secondItem="TX5-Tu-TXw" secondAttribute="top" constant="8" id="7Ao-xc-CqL"/>
+                <constraint firstItem="szw-k0-QVd" firstAttribute="top" secondItem="TX5-Tu-TXw" secondAttribute="top" id="Cka-Bq-jpe"/>
+                <constraint firstItem="qBm-SD-pUP" firstAttribute="top" secondItem="dqV-OH-Fnx" secondAttribute="bottom" id="FZM-le-T9R"/>
+                <constraint firstItem="FID-8I-lJ6" firstAttribute="top" secondItem="qBm-SD-pUP" secondAttribute="bottom" constant="3" id="L8B-Bp-hTf"/>
+                <constraint firstItem="Edj-we-JMf" firstAttribute="top" secondItem="qBm-SD-pUP" secondAttribute="bottom" id="O7f-wx-PZs"/>
+                <constraint firstAttribute="trailing" secondItem="dqV-OH-Fnx" secondAttribute="trailing" constant="12" id="YD3-Td-3jh"/>
+                <constraint firstAttribute="centerX" secondItem="szw-k0-QVd" secondAttribute="centerX" id="gWE-pm-cFI"/>
+                <constraint firstItem="qBm-SD-pUP" firstAttribute="leading" secondItem="szw-k0-QVd" secondAttribute="trailing" constant="12" id="hyo-zV-JwZ"/>
+                <constraint firstAttribute="trailing" secondItem="qBm-SD-pUP" secondAttribute="trailing" constant="12" id="nJl-PG-pgY"/>
+                <constraint firstItem="dqV-OH-Fnx" firstAttribute="leading" secondItem="szw-k0-QVd" secondAttribute="trailing" constant="12" id="svo-nb-vVL"/>
+            </constraints>
+            <size key="customSize" width="50" height="317"/>
+            <connections>
+                <outlet property="imageView" destination="szw-k0-QVd" id="0Rr-5N-VNT"/>
+            </connections>
+            <point key="canvasLocation" x="752" y="669.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

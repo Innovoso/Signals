@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Sidekicks View Controller-->
+        <scene sceneID="3hL-nw-vlY">
+            <objects>
+                <viewController storyboardIdentifier="SNSidekicksViewController" id="cfA-ah-SGS" customClass="SNSidekicksViewController" customModule="Signals" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VB9-4f-uZG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ypG-7l-LGu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jjj-BP-Tf0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nb3-oL-Vzc">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JTP-7O-JL9">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-Nj-tEX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="DlY-A4-FPf"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="2nm-Je-FKs">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="k9I-CF-7b8">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gJp-po-F4N">
+                                                <rect key="frame" x="16" y="27" width="26" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="LargeSearch">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </barButtonItem>
+                                        <view key="titleView" contentMode="scaleToFill" id="0ag-cg-9sT">
+                                            <rect key="frame" x="113" y="18" width="150" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your sidekicks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zt-Tn-ohn">
+                                                    <rect key="frame" x="30" y="13" width="92" height="22"/>
+                                                    <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="19"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.90588235289999997" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="8Zt-Tn-ohn" secondAttribute="centerY" id="CME-ti-BIJ"/>
+                                                <constraint firstAttribute="centerX" secondItem="8Zt-Tn-ohn" secondAttribute="centerX" id="CwE-jA-MuX"/>
+                                            </constraints>
+                                        </view>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="062-ic-kjO">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kMU-FE-rie">
+                                                <rect key="frame" x="276" y="27" width="13" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="YellowForward">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wp0-Nj-tEX" firstAttribute="leading" secondItem="jjj-BP-Tf0" secondAttribute="leading" id="QCG-Lh-gXd"/>
+                            <constraint firstItem="Nb3-oL-Vzc" firstAttribute="leading" secondItem="jjj-BP-Tf0" secondAttribute="leading" id="WTn-cn-vrN"/>
+                            <constraint firstItem="Nb3-oL-Vzc" firstAttribute="top" secondItem="VB9-4f-uZG" secondAttribute="bottom" constant="8" id="aQd-N8-TXB"/>
+                            <constraint firstAttribute="trailing" secondItem="wp0-Nj-tEX" secondAttribute="trailing" id="bKG-dz-ub3"/>
+                            <constraint firstItem="ypG-7l-LGu" firstAttribute="top" secondItem="Nb3-oL-Vzc" secondAttribute="bottom" id="k7t-ji-12H"/>
+                            <constraint firstItem="wp0-Nj-tEX" firstAttribute="top" secondItem="jjj-BP-Tf0" secondAttribute="top" id="mjb-VM-DVv"/>
+                            <constraint firstAttribute="trailing" secondItem="Nb3-oL-Vzc" secondAttribute="trailing" id="z5C-mB-w82"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Nb3-oL-Vzc" id="CGC-cW-N2K"/>
+                        <outlet property="navigationBar" destination="wp0-Nj-tEX" id="rbs-Xj-Tep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="np3-p4-z2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="474"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LargeSearch" width="26" height="26"/>
+        <image name="YellowForward" width="13" height="20"/>
+    </resources>
+</document>

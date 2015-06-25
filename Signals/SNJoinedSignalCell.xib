@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+            <string>ComicBook</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SNJoinedSignalCell" id="S2D-Ie-8A8" customClass="SNJoinedSignalCell" customModule="Signals" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tUP-L6-XVT" customClass="SNSignalImageView" customModule="Signals" customModuleProvider="target">
+                        <rect key="frame" x="147" y="0.0" width="80" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Aea-DR-niF"/>
+                            <constraint firstAttribute="width" constant="80" id="JZD-NX-A4n"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-Lq-2BL">
+                        <rect key="frame" x="239" y="26" width="124" height="20"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:30pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRg-nT-9Py">
+                        <rect key="frame" x="239" y="46" width="124" height="20"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open spots:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXK-52-XPG">
+                        <rect key="frame" x="239" y="69" width="65" height="13"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="10"/>
+                        <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCG-eP-clW">
+                        <rect key="frame" x="312" y="66" width="11" height="20"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Di1-lb-Ns9" customClass="SNSquareBadgeButton" customModule="Signals" customModuleProvider="target">
+                        <rect key="frame" x="239" y="4" width="30" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gIP-4l-kQD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="12"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                <color key="value" red="0.92549019610000005" green="0.3803921569" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="highlightBorderColor">
+                                <color key="value" red="0.92549019610000005" green="0.3803921569" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                <real key="value" value="-20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AXK-52-XPG" firstAttribute="top" secondItem="qRg-nT-9Py" secondAttribute="bottom" constant="3" id="0yy-vr-YJj"/>
+                <constraint firstItem="tUP-L6-XVT" firstAttribute="top" secondItem="S2D-Ie-8A8" secondAttribute="top" id="108-SY-aOE"/>
+                <constraint firstAttribute="centerX" secondItem="tUP-L6-XVT" secondAttribute="centerX" id="1nk-X6-nBh"/>
+                <constraint firstItem="MHa-Lq-2BL" firstAttribute="leading" secondItem="tUP-L6-XVT" secondAttribute="trailing" constant="12" id="BGG-ft-pp7"/>
+                <constraint firstItem="JCG-eP-clW" firstAttribute="leading" secondItem="AXK-52-XPG" secondAttribute="trailing" constant="8" id="IfK-4S-9Ty"/>
+                <constraint firstAttribute="trailing" secondItem="qRg-nT-9Py" secondAttribute="trailing" constant="12" id="J8F-KG-sgA"/>
+                <constraint firstItem="Di1-lb-Ns9" firstAttribute="top" secondItem="S2D-Ie-8A8" secondAttribute="top" constant="4" id="NEd-Xk-A8e"/>
+                <constraint firstAttribute="trailing" secondItem="MHa-Lq-2BL" secondAttribute="trailing" constant="12" id="O6p-e1-xfm"/>
+                <constraint firstItem="Di1-lb-Ns9" firstAttribute="leading" secondItem="tUP-L6-XVT" secondAttribute="trailing" constant="12" id="Rdq-XQ-cZQ"/>
+                <constraint firstItem="qRg-nT-9Py" firstAttribute="leading" secondItem="tUP-L6-XVT" secondAttribute="trailing" constant="12" id="Wcp-tx-sne"/>
+                <constraint firstItem="qRg-nT-9Py" firstAttribute="top" secondItem="MHa-Lq-2BL" secondAttribute="bottom" id="aPw-3p-xbY"/>
+                <constraint firstItem="JCG-eP-clW" firstAttribute="top" secondItem="qRg-nT-9Py" secondAttribute="bottom" id="jD4-WU-ArM"/>
+                <constraint firstItem="MHa-Lq-2BL" firstAttribute="top" secondItem="Di1-lb-Ns9" secondAttribute="bottom" constant="2" id="wty-6v-tP9"/>
+                <constraint firstItem="AXK-52-XPG" firstAttribute="leading" secondItem="tUP-L6-XVT" secondAttribute="trailing" constant="12" id="yXm-xS-TEj"/>
+            </constraints>
+            <size key="customSize" width="50" height="317"/>
+            <point key="canvasLocation" x="752" y="669.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
