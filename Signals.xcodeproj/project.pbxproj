@@ -15,6 +15,8 @@
 		3A825F4D1B3BE63E00E0760E /* SNJoinedSignalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F4C1B3BE63E00E0760E /* SNJoinedSignalCell.swift */; };
 		3A825F501B3BED7600E0760E /* SNSidekickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A825F4F1B3BED7600E0760E /* SNSidekickCell.xib */; };
 		3A825F521B3BED8A00E0760E /* SNSidekickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F511B3BED8A00E0760E /* SNSidekickCell.swift */; };
+		3A825F551B3BFFEF00E0760E /* SNIntentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A825F541B3BFFEF00E0760E /* SNIntentCell.xib */; };
+		3A825F571B3C002400E0760E /* SNIntentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A825F561B3C002400E0760E /* SNIntentCell.swift */; };
 		3AAA093D1B39263D009DFA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA093C1B39263D009DFA26 /* AppDelegate.swift */; };
 		3AAA093F1B39263D009DFA26 /* SNMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA093E1B39263D009DFA26 /* SNMainViewController.swift */; };
 		3AAA09421B39263D009DFA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAA09401B39263D009DFA26 /* Main.storyboard */; };
@@ -68,6 +70,8 @@
 		3A825F4C1B3BE63E00E0760E /* SNJoinedSignalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNJoinedSignalCell.swift; sourceTree = "<group>"; };
 		3A825F4F1B3BED7600E0760E /* SNSidekickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNSidekickCell.xib; sourceTree = "<group>"; };
 		3A825F511B3BED8A00E0760E /* SNSidekickCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSidekickCell.swift; sourceTree = "<group>"; };
+		3A825F541B3BFFEF00E0760E /* SNIntentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNIntentCell.xib; sourceTree = "<group>"; };
+		3A825F561B3C002400E0760E /* SNIntentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNIntentCell.swift; sourceTree = "<group>"; };
 		3AAA09371B39263D009DFA26 /* Signals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAA093B1B39263D009DFA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AAA093C1B39263D009DFA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,15 @@
 				3A825F511B3BED8A00E0760E /* SNSidekickCell.swift */,
 			);
 			name = SNSidekickCell;
+			sourceTree = "<group>";
+		};
+		3A825F531B3BFFDC00E0760E /* SNIntentCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A825F541B3BFFEF00E0760E /* SNIntentCell.xib */,
+				3A825F561B3C002400E0760E /* SNIntentCell.swift */,
+			);
+			name = SNIntentCell;
 			sourceTree = "<group>";
 		};
 		3AAA092E1B39263D009DFA26 = {
@@ -362,6 +375,7 @@
 		3AE94CA61B3B3BFD009658C5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3A825F531B3BFFDC00E0760E /* SNIntentCell */,
 				3A825F4E1B3BED6500E0760E /* SNSidekickCell */,
 				3A825F3F1B3BD2D900E0760E /* SNSignalCell */,
 				3A825F491B3BE60500E0760E /* SNJoinedSignalCell */,
@@ -492,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A825F551B3BFFEF00E0760E /* SNIntentCell.xib in Resources */,
 				3AE94C831B3AB637009658C5 /* JoinedSignals.storyboard in Resources */,
 				3AE94CB81B3BD24B009658C5 /* SNSignalCell.xib in Resources */,
 				3AAA09421B39263D009DFA26 /* Main.storyboard in Resources */,
@@ -575,6 +590,7 @@
 				3A825F461B3BE43C00E0760E /* SNExpandedButton.swift in Sources */,
 				3AAA093F1B39263D009DFA26 /* SNMainViewController.swift in Sources */,
 				3AE94C8E1B3AB729009658C5 /* SNSignalsViewControllerCell.swift in Sources */,
+				3A825F571B3C002400E0760E /* SNIntentCell.swift in Sources */,
 				3AE94C871B3AB676009658C5 /* SNSignalsViewController.swift in Sources */,
 				3AE94C7C1B3AABE2009658C5 /* SNStatusViewController.swift in Sources */,
 				3AE94C901B3AB735009658C5 /* SNJoinedSignalsViewControllerCell.swift in Sources */,

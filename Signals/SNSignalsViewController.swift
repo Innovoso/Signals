@@ -30,6 +30,8 @@ class SNSignalsViewController: SNNoHairlineNavigationBarViewController, UICollec
         collectionView.contentInset.bottom = 100
         collectionView.alwaysBounceVertical = true
         
+        collectionView.registerNib(UINib(nibName: "SNIntentCell", bundle: nil),
+            forCellWithReuseIdentifier: "SNIntentCell")
         collectionView.registerNib(UINib(nibName: "SNSignalCell", bundle: nil),
             forCellWithReuseIdentifier: "SNSignalCell")
     }
@@ -39,13 +41,19 @@ class SNSignalsViewController: SNNoHairlineNavigationBarViewController, UICollec
     // ==================================
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SNSignalCell",
-            forIndexPath: indexPath) as! SNSignalCell
-        return cell
+        if indexPath.row == 0 {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SNIntentCell",
+                forIndexPath: indexPath) as! SNIntentCell
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SNSignalCell",
+                forIndexPath: indexPath) as! SNSignalCell
+            return cell
+        }
     }
     
     // ==========================================
@@ -53,7 +61,11 @@ class SNSignalsViewController: SNNoHairlineNavigationBarViewController, UICollec
     // ==========================================
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(collectionView.bounds.width, 100)
+        if indexPath.row == 0 {
+            return CGSizeMake(collectionView.bounds.width, 60)
+        } else {
+            return CGSizeMake(collectionView.bounds.width, 100)
+        }
     }
     
     // ================================
