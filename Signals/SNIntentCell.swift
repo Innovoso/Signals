@@ -10,4 +10,8 @@ import UIKit
 
 class SNIntentCell: UICollectionViewCell {
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        backgroundColor = UIColor.clearColor()
+    }
 }
